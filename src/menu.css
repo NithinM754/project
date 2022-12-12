@@ -56,7 +56,7 @@ body{
   }
   .food-img img {
     border-radius: 12px 12px 12px 12px ;
-    transition: .10s;
+    transition: .3s;
   }
   .food-img h4 {
     position: absolute;
@@ -97,7 +97,7 @@ body{
     font-size: 25px;
     font-weight: 600;
   }
-  .singlefood a {
+  .pos button {
     text-decoration: rgb(249, 250, 249);
     background-color: #ff7720;
     color: rgb(255, 255, 255);
@@ -108,11 +108,72 @@ body{
     width: 160px;
     margin: 20px auto 25px auto;
     border-radius: 20px;
-    transition: 0.1s;
+    transition: .1s;
   }
-  .singlefood a:hover {
+  .pos button:hover {
     background-color: rgb(41, 189, 110);
+    transform: scale(1.1);
+  }
+  .pos:hover{
+    transform: scale(1.1);
   }
   .singlefood:hover{
     transform: scale(1.1);
   }
+  .but button {
+    text-decoration: rgb(249, 250, 249);
+    background-color: #fefdfc;
+    color: rgb(32, 30, 30);
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 30px;
+    margin: 25px auto 25px auto;
+    border-radius: 8px;
+    transition: .1s; 
+    font-size: larger;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    
+    /* padding: 5px 15px; */
+    
+    /* display: block;
+    */
+  }
+  .but button:hover {
+    background-color: rgb(41, 189, 110);
+    transform: scale(1.1);
+  }
+  .but:hover{
+    transform: scale(1.1);
+  }
+  .fle{
+    display: flex;
+  }
+  
+  
+@media only screen and (min-width:992px) and (max-width:1170px) {
+  .container{
+      width: 970px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .container{
+    flex-direction: column;
+      width: 750px;
+  }
+  .single-food{
+      flex-basis: 49%;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .container{
+      width: 350px;
+  }
+  .single-food{
+      flex-basis: 100%;
+  }
+}

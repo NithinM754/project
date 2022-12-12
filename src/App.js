@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import { MenuProvider } from './menu 1';
 import Menu from './menu'
@@ -9,16 +8,17 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
   return (
+    // content="width=device-width, initial-scale=1.0";
     <>
-    <BrowserRouter>
+    <BrowserRouter className='col-md-4'>
     <Routes>
-
-     <Route path ='/menu'  element={ <Navbar/> } />
+     <Route path =''  element={ <Navbar/> } />
     </Routes>
     </BrowserRouter>
       <MenuProvider>
       <Menu/>
       </MenuProvider>
+    {/* <Navbar/> */}
       </>
   );
 }

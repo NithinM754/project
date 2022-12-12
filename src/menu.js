@@ -1,5 +1,7 @@
 import "./menu.css";
+import Counter from "./Counter";
 import { UseStateContext } from "./menu 1";
+
 const Menu = () => {
     const {menu} = UseStateContext();
     console.log(menu);
@@ -8,7 +10,7 @@ const Menu = () => {
     <div class="food-area">
       <div class="container">
         <div class="title">
-          <h4>Our menu</h4>
+          <h4><i style={{fontSize:'1.2em'}} class="fa-solid fa-utensils"></i> &nbsp;Menu </h4>
           <div class="foods">
             {menu.map((men, id) => {
               return (
@@ -27,7 +29,12 @@ const Menu = () => {
                     <li>{men.name}</li>
                     <li>{men.price}</li>
                   </ul>
-                  <a href="">Add to Cart</a>
+                  <div className="but">
+                  <Counter/>
+                  </div>
+                  <div className="pos">
+                  <button type='button'>Add to Cart</button>
+                </div>
                 </div>
               );
             })}

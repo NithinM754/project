@@ -1,5 +1,6 @@
 import React from "react"
 import './nav.css';
+import Cart from "./cart";
 
 import { Link } from "react-router-dom";
 
@@ -15,9 +16,8 @@ function Navbar()
                         <Link className='logo'><i class="fa-solid fa-bars"></i> Menu</Link>
                         <Link  className='logo'>About Us</Link> 
                     <Link  className='logo'><i class="fa-solid fa-location-dot"></i> Locations</Link>
-                    <Link className='logo'><i class="fa-solid fa-cart-shopping"></i>Cart</Link>
-                    {/* <Link  style={{borderRadius:'100px',fontSize:'20px',padding:'6px 5px',marginBottom:'2px'}}className="login" href="">Login</Link>
-                <Link className="signup">SignUp</Link> */}
+                    <Link className='logo' to="/cart" element={<Cart/>}><i class="fa-solid fa-cart-shopping"></i>Cart</Link>
+                   
             </nav>
             </header>
           </div>

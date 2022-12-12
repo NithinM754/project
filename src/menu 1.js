@@ -50,31 +50,31 @@ export const  MenuProvider = ({children}) => {
             img:"https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?size=626&ext=jpg&ga=GA1.2.873429719.1669179693&semt=sph",
             name:"Pasta",
             price: "Rs . 90",
-            id:"5",
+            id:"8",
         },
         {
             img:"https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27379.jpg?size=626&ext=jpg&ga=GA1.2.873429719.1669179693&semt=sph",
             name:"Fried Chicken",
             price: "Rs . 120",
-            id:"5",
+            id:"9",
         },
         {
             img:"https://img.freepik.com/premium-photo/veg-samosa-is-indian-popular-snack-junk-food-served-with-fried-green-chilly-onion-chutney-ketchup_466689-13443.jpg?size=626&ext=jpg&ga=GA1.2.873429719.1669179693&semt=sph",
             name:"Veg Samosa",
             price: "Rs .30 ",
-            id:"5",
+            id:"10",
         },
         {
             img:"https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?size=626&ext=jpg&ga=GA1.2.873429719.1669179693&semt=sph",
             name:"Chicken Tikka",
             price: "Rs . 100",
-            id:"5",
+            id:"11",
         },
         {
             img:"https://img.freepik.com/premium-photo/shahi-paneer-paneer-kadai_57665-1334.jpg?size=626&ext=jpg&ga=GA1.2.873429719.1669179693&semt=sph",
             name:"Paneer Kadai",
             price: "Rs . 140",
-            id:"5",
+            id:"12",
         },
     ];
     return (
